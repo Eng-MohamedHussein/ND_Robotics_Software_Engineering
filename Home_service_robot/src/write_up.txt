@@ -1,0 +1,17 @@
+This is a write up to describe the packages used in this project
+- gmapping package:
+
+    The gmapping package provides laser-based SLAMs  which stands for -Simultaneous Localization and Mapping-
+    this package is included as a ROS node named slam_gmapping.
+    slam_gmapping, helps creating a 2-D occupancy grid map from laser and pose data collected by a mobile robot.
+
+- navigation
+
+    A 2D navigation stack that takes in information from multiple sensors like (odometry, sensor streams) and a goal pose and outputs
+    velocity commands that are safe and will besent to a mobile base.
+
+- amcl
+
+    amcl package which stands for -advanced monte carlo localization-  is a probabilistic localization system for a robot moving in 2D. 
+    It implements the adaptive (or KLD-sampling) Monte Carlo localization approach,
+    which uses a particle filter to track the pose of a robot against a known map.
