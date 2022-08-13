@@ -7,6 +7,7 @@ Contents
     Project2
     Project3
     Project4
+    Project5
     
 
 1. Project1: Build My World
@@ -48,3 +49,14 @@ What I learned
 
     SLAM implementation with ROS/Gazebo
     ROS debugging tools: rqt, roswtf
+
+5. Project5: Home Service Robot
+Goal
+
+Use a SLAM package to autonomously map an environment and interface robot with a path planning and navigation ROS package to move objects within an environment.
+What I learned
+
+    Advanced ROS and Gazebo Integration
+    ROS Navigation stack 7
+    Path Planning
+
