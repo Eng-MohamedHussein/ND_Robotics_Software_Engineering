@@ -11,8 +11,8 @@
   
     // Set our initial shape type to be a cube
     uint32_t shape = visualization_msgs::Marker::CUBE;
-    double X = 2;
-    double Y = 2;
+    double X = -8;
+    double Y = -3;
   
     while (ros::ok())
     {
@@ -80,8 +80,8 @@
       // pause for 5 secondes
       ros::Duration(5.0).sleep();
       // adjust the dorp off zone
-      X =1;
-      Y =-2;
+      X =-1;
+      Y =0.5;
       // Publish the marker at the drop off zone
       marker.action = visualization_msgs::Marker::ADD;
       marker_pub.publish(marker);

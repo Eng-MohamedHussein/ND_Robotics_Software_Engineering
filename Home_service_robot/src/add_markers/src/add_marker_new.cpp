@@ -29,11 +29,11 @@ int main( int argc, char** argv )
   ros::Rate r(1);
   ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
   ros::Subscriber sub = n.subscribe("/amcl_pose", 100, getRobotPosition);
-  double pick_up_x = 2;
-  double pick_up_y = 2;
+  double pick_up_x = -8;
+  double pick_up_y = -3;
 
-  double drop_off_x=1;
-  double drop_off_y=-2;
+  double drop_off_x=-1;
+  double drop_off_y=0.5;
 
 
   bool pickedUp = false;

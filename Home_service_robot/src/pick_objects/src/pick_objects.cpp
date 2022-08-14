@@ -11,11 +11,11 @@ int main(int argc, char** argv){
 
   //tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
-  double pick_up_x=2;
-  double pick_up_y=2;
+  double pick_up_x=-8;
+  double pick_up_y=-3;
 
-  double drop_off_x=1;
-  double drop_off_y=-2;
+  double drop_off_x=-1;
+  double drop_off_y=0.5;
 
   // Wait 5 sec for move_base action server to come up
   while(!ac.waitForServer(ros::Duration(5.0))){
