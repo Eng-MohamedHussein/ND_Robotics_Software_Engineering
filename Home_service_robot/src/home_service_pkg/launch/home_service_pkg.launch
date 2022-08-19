@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="home_service_pkg" pkg="home_service_pkg" type="home_service_pkg" output="screen" />
+</launch>

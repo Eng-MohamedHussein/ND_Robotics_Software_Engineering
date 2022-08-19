@@ -5,5 +5,5 @@ xterm -e "roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find a
 sleep 5
 xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch config_file:=$(pwd)/src/rvizConfig/home_service.rviz" &
 sleep 5
-xterm -e "roslaunch add_markers add_markers.launch" &
+xterm -e "roslaunch home_service_pkg home_service_pkg.launch" &
 xterm -e "roslaunch pick_objects pick_objects.launch" 
